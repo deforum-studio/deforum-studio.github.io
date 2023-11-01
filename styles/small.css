@@ -376,6 +376,23 @@ section {
 }
 
 /* Info content */
+
+.info header {
+    height: 400px;
+    overflow: hidden;
+}
+
+.info #noiseCanvas {
+    height: 400px;
+}
+
+.info #header-intro {
+    position: relative;
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+}
+
 .info-content-wrapper {}
 .info-left {}
 .info-right {}
