@@ -1,0 +1,68 @@
+/* Global Styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #FFF;
+  scroll-behavior: smooth;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1, h2, h3, h4, h5 {
+ font-weight: 600;
+}
+
+a:link {}
+a:visited {}
+a:hover {}
+a:active {}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+/* Header & Navigation */
+
+header {}
+
+nav {}
+
+#header-intro {}
+
+/* Global elements */
+
+.some-bar {}
+
+/* Homepage content */
+
+section#home-info {}
+section#home-projects {}
+section#home-madebydeforum {}
+section#home-getstarted {}
+
+/* Info content */
+.info-content-wrapper {}
+.info-left {}
+.info-right {}
+
+section#info-about {}
+section#info-more {}
+
+
+
+
+/* Footer */
+.footer-box {}
+
+/* RSPNSV: Tablets portrait */
+
+@media all and (max-width: 768px) {
+   
+ }
