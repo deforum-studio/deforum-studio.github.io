@@ -245,23 +245,23 @@ a:hover.btn-atn  {text-decoration: none;}
 	font-size: 80%;
 }
 
-.some-bar ul {
+.some-bar ul, ul.support-us  {
 	list-style-type: none;
 }
 
-.some-bar ul li {
+.some-bar ul li, .support-us ul li {
   display: inline-block;
   margin-right: 10px;
 }
 
-.some-bar li img {
+.some-bar li img, .support-us li img {
 	width: 40px;
 	height: auto;
 	transition: transform 0.3s ease-in;
 }
 
 
-.some-bar li img:hover {
+.some-bar li img:hover, .support-us li img:hover {
 	transform: scale(1.07);
 }
 
@@ -271,7 +271,11 @@ section {
     box-sizing: border-box;
 }
 
-
+.quote {
+    font-style: italic;
+    font-weight: 400;
+    margin: 40px 0;
+}
 
 /* Homepage content */
 
@@ -393,13 +397,36 @@ section {
     text-align: center;
 }
 
-.info-content-wrapper {}
-.info-left {}
-.info-right {}
 
-section#info-about {}
-section#info-more {}
+.info-left, .info-right {
+    margin: 80px 0 80px 30px;
+}
 
+#info-about .some-bar {text-align: left;}
+
+#info-more {
+  background: #070707;
+}
+
+#info-more .support-us {
+    margin-top: 50px;
+}
+
+#info-about .section-wrapper, #info-more .section-wrapper {
+    width: 90%;
+    margin: 0 auto;
+} 
+
+#info-about h2, #info-more h2 {
+    text-transform:uppercase;
+    margin-bottom: 50px;
+}
+
+#info-about h2::before, #info-more h2::before {
+    content: "# ";
+    margin-left:-30px;
+    opacity: 0.5;
+}
 
 /* Footer */
 
