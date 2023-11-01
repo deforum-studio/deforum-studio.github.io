@@ -353,9 +353,14 @@ section {
     text-align: right;
 }
 
+#home-getstarted {
+    background: #070707;
+}
+
 #home-getstarted .section-wrapper {
     width: 80%;
     margin: 0 auto;
+    padding-bottom: 15px;
 }
 
 #home-getstarted h2 {
@@ -379,10 +384,31 @@ section#info-about {}
 section#info-more {}
 
 
-
-
 /* Footer */
-.footer-box {}
+
+footer {
+    border-top: 2px solid rgba(255,255,255,0.7);
+    padding: 50px;
+}
+
+.footer-box {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.footer-box ul {list-style-type: none;}
+
+footer .some-bar {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.credits {
+    text-align: right;
+    font-size: 70%;
+    opacity: 0.5;
+    margin: 50px 0;
+}
 
 /* RSPNSV: Tablets portrait */
 
