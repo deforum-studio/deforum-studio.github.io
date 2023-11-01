@@ -1,9 +1,15 @@
 /* Global Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
-  margin: 0;
-  padding: 0;
+  width: 100vw;
   background: #000;
   color: #FFF;
   scroll-behavior: smooth;
@@ -20,9 +26,6 @@ body {
     clear:both;
 }
 
-.clear {
-    *zoom:1;
-}
 
 h1 {font-size: 2.5em;}
 h2 {font-size: 2em;}
@@ -33,7 +36,7 @@ h1, h2, h3, h4, h5 {
 }
 
 a:link {color: #FFF;}
-a:visited {opacity: 0.8;}
+a:visited {color: #FFF;opacity: 0.7;}
 a:hover {text-decoration: none;}
 a:active {text-decoration: underline;}
 
@@ -178,7 +181,7 @@ nav ul li.nav-special {
 }
 
 #header-intro h1 {
-  font-family: 'Inter' sans-serif;
+  font-family: 'Inter', sans-serif;
   overflow: hidden; 
   white-space: nowrap; 
   margin: 0 auto; 
@@ -222,11 +225,10 @@ nav ul li.nav-special {
 .btn-atn {
 	padding: 5px 10px;
 	border: 1px solid #FFF;
-	transition: border padding 0.3s ease-in;
+	transition: padding 0.3s ease-in;
 }
 
 .btn-atn:hover {
-	border: 2px solid #FFF;
 	padding: 5px 15px;
 }
 
@@ -235,6 +237,7 @@ a:hover.btn-atn  {text-decoration: none;}
 
 .some-bar {
 	text-align: right;
+    margin-right: 15px;
 }
 
 .some-bar p {
@@ -262,18 +265,67 @@ a:hover.btn-atn  {text-decoration: none;}
 	transform: scale(1.07);
 }
 
-/* Homepage content */
-
-section#home-info {
-	padding: 50px 15px;
+section {
+    margin: 0;
+    padding: 50px 15px;
+    box-sizing: border-box;
 }
 
+
+
+/* Homepage content */
+
+#home-info .section-wrapper {width: 95%; margin: 0 auto;}
 #home-info-content p {margin: 50px 0;}
 #home-info-content .btn-atn {margin-left: 15px;}
 
 
 
-section#home-projects {}
+#home-projects {
+   background: linear-gradient(40deg, 
+        black 10%, white 10%, white 20%, black 20%, 
+        black 30%, white 30%, white 40%, black 40%, 
+        black 50%, white 50%, white 60%, black 60%, 
+        black 70%, white 70%, white 80%, black 80%, 
+        black 90%, white 90%);
+}
+
+#home-projects-header {
+    background: #000;
+    width: 80%;
+    padding: 40px 40px 40px 40px;
+    margin-left: -15px;
+}
+
+#home-projects-header p {
+    margin-left: 15px;
+}
+
+#home-projects-header h2 {
+    text-transform: uppercase;
+}
+
+.project-box {
+    background: #000;
+    width: 80%;
+    padding: 20px 20px 50px 20px;
+    margin: 30px auto;
+    text-align: center;
+    transition: transform 0.3s ease-in;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+.github-margin {
+    margin: 20px 0 40px 0;
+}
+
+.commit-class, .star-class {
+    font-size: 90%;
+    opacity: 0.9;
+}
 
 section#home-madebydeforum {}
 
