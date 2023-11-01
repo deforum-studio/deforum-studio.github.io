@@ -8,10 +8,18 @@ body {
   scroll-behavior: smooth;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+
+.clear {
+    *zoom:1;
 }
 
 h1, h2, h3, h4, h5 {
@@ -32,11 +40,117 @@ img {
 
 header {}
 
-nav {}
+#logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  margin: 30px 0 0 30px;
+}
+
+/*--> Mobile menu --*/
+/* Menu Icon */
+.menu-icon {
+	position: absolute;
+	top: 50px;
+	right: 20px;
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 22px;
+    z-index: 2;
+}
+
+.menu-icon span,
+.menu-icon span::before,
+.menu-icon span::after {
+    content: '';
+    display: block;
+    background: #FFF;
+    height: 3px;
+    width: 30px;
+    position: absolute;
+	transition:transform 0.3s ease;
+}
+
+.menu-icon span::before {
+    top: -10px;
+}
+
+.menu-icon span::after {
+    bottom: -10px;
+}
+
+/* Menu Toggle */
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .menu-icon span {
+    background: transparent;
+}
+
+#menu-toggle:checked ~ .menu-icon span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#menu-toggle:checked ~ .menu-icon span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 0;
+	background: #000;
+	z-index: 1;
+	overflow: hidden;
+	transition: height 0.3s ease;
+	font-size: 40px;
+}
+
+#menu-toggle:checked ~ nav {
+    height: 100vh;
+}
+
+nav a:link {text-decoration: none; color: #FFF;}
+nav a:hover {text-decoration: underline; color: #FFF;}
+
+nav ul {
+	margin-top: 50px;
+	list-style: none;
+	text-align: center;
+}
+
+nav ul li.nav-special {
+	margin-top: 30px;
+}
+
+.nav-special label {
+	font-size: 40%;
+	opacity: 0.5;
+	margin-top: -10px;
+}
 
 #header-intro {}
 
 /* Global elements */
+
+.btn-atn {
+	padding: 5px 10px;
+	border: 1px solid #FFF;
+	transition: border padding 0.3s ease-in;
+}
+
+.btn-atn:hover {
+	border: 2px solid #FFF;
+	padding: 5px 15px;
+}
+
+a:hover.btn-atn  {text-decoration: none;}
 
 .some-bar {}
 
