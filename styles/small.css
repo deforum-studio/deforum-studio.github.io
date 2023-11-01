@@ -276,6 +276,7 @@ section {
 /* Homepage content */
 
 #home-info .section-wrapper {width: 95%; margin: 0 auto;}
+#home-info-content {margin-right: 15px;}
 #home-info-content p {margin: 50px 0;}
 #home-info-content .btn-atn {margin-left: 15px;}
 
@@ -327,7 +328,30 @@ section {
     opacity: 0.9;
 }
 
-section#home-madebydeforum {}
+#home-madebydeforum .section-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#home-madebydeforum h2 {
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.mbd-video {
+    margin-bottom: 50px;
+}
+
+.mbd-video:last-child {
+    margin-bottom: 0;
+}
+
+.mbd-byline {
+    font-size: 80%;
+    opacity: 0.7;
+    text-align: right;
+}
 
 section#home-getstarted {}
 
