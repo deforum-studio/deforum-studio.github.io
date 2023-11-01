@@ -18,11 +18,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
     <link rel="manifest" href="assets/icon/site.webmanifest">
-    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
     <title>deforum</title>
 </head>
 <body class="home">
+
 <header>
+<canvas id="noiseCanvas"></canvas>
+<script src="scripts/noise.js"></script>
+<video id="background-video" autoplay loop muted poster="assets/header.mp4"> 
+<source src="assets/header.mp4" type="video/mp4">
+</video> 
+
 <div id="logo">
 {d}
 </div>
@@ -43,11 +50,13 @@
 </nav>
 
 <div id="header-intro">
-
-</div>
+<h1>{0:"deforum.art"}</h1>
+<p>More than just a platform; a vibrant, open-source community of innovative developers and talented artists.</p>
 <div id="btn-scrolldown">
-
+    <a href="#home-info"><img src="assets/down-arrow.svg"></a>
 </div>
+</div>
+
 
 </header>
 

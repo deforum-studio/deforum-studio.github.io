@@ -1,6 +1,7 @@
 /* Global Styling */
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
   margin: 0;
   padding: 0;
   background: #000;
@@ -22,6 +23,10 @@ body {
     *zoom:1;
 }
 
+h1 {font-size: 2.5em;}
+h2 {font-size: 2em;}
+h3 {font-size: 1.5em;}
+
 h1, h2, h3, h4, h5 {
  font-weight: 600;
 }
@@ -38,13 +43,43 @@ img {
 
 /* Header & Navigation */
 
-header {}
+header {
+	width: 100%;
+	height: 100vh;
+}
+
+#noiseCanvas {
+  opacity: 0.3;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#background-video {
+  opacity: 0.7;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
 
 #logo {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 50px;
-  margin: 30px 0 0 30px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 
 /*--> Mobile menu --*/
@@ -135,7 +170,51 @@ nav ul li.nav-special {
 	margin-top: -10px;
 }
 
-#header-intro {}
+#header-intro {
+ position: absolute;
+ top: 30%;
+ text-align: center;
+}
+
+#header-intro h1 {
+  font-family: 'Inter' sans-serif;
+  overflow: hidden; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end);
+}
+
+#header-intro p {
+	max-width: 60%;
+	margin: 30px auto;
+}
+
+#btn-scrolldown {
+	width: 50px;
+	margin: 0 auto;
+	animation: bounce 1s infinite alternate;
+}
+
+/* Animations */
+
+/* --> bounce */
+@keyframes bounce {
+  from {
+   transform: translateY(0px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+} 
+
+/* --> Typing */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 
 /* Global elements */
 
