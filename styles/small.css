@@ -353,7 +353,22 @@ section {
     text-align: right;
 }
 
-section#home-getstarted {}
+#home-getstarted .section-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#home-getstarted h2 {
+    text-transform: uppercase;
+}
+
+#home-getstarted p {
+    margin: 20px 0 40px 15px;
+}
+
+#home-getstarted .btn-atn {
+    margin-left: 15px;
+}
 
 /* Info content */
 .info-content-wrapper {}
