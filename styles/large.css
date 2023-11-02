@@ -57,6 +57,7 @@ nav ul li.with-label::after {
 
 #header-intro {
  top: 35%;
+  width: 100%;
 }
 
 /* --> Homepage content */
@@ -163,6 +164,14 @@ footer .some-bar {
     padding: 75px 35px;
  }
 
+ nav {
+    width: 695px;
+ }
+
+ #logo {
+    font-size: 85px;
+ }
+
  /* --> Homepage content */
 
 #home-info .section-wrapper {
@@ -190,6 +199,67 @@ footer .some-bar {
    
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1536px) {
+
+/* --> Global */
+section {
+    padding: 90px 50px;
+}
+
+#logo {
+    font-size: 105px;
+}
+
+nav {
+   width: 800px;
+   font-size: 1.4em; 
+}
+
+ #header-intro h1 {
+   font-size: 3.5em;  
+ }
+
+ #header-intro p {
+    font-size: 1.5em;
+ }
+
+ /* --> Homepage content */
+
+ #home-projects {
+      background: linear-gradient(40deg, 
+        black 5%, white 5%, white 10%, black 10%, 
+        black 15%, white 15%, white 20%, black 20%, 
+        black 25%, white 25%, white 30%, black 30%, 
+        black 35%, white 35%, white 40%, black 40%, 
+        black 45%, white 45%, white 50%, black 50%, 
+        black 55%, white 55%, white 60%, black 60%, 
+        black 65%, white 65%, white 70%, black 70%, 
+        black 75%, white 75%, white 80%, black 80%, 
+        black 85%, white 85%, white 90%, black 90%, 
+        black 95%, white 95%);
+ }
+
+ #home-projects-header {
+    margin-left: -50px;
+ }
+
+ .project-box {
+    flex: 0 1 calc(25% - 50px);
+ }
+
+ #home-madebydeforum h2 {
+    float: right;
+ }
+
+ #mbd-video-wrapper {
+    margin-top: 0;
+    width: 70%;
+    float: left;
+ }
+
+/* --> Info page content */
+   .info header, .info #noiseCanvas {
+    height: 600px;
+   }
    
 }
