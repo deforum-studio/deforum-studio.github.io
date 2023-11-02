@@ -112,6 +112,27 @@ nav ul li.with-label::after {
     width: 60%;
 }
 
+/* --> Info content */
+#info-about .some-bar {
+    float: none;
+    text-align: left;
+}
+
+.info-content-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: stretch;
+
+}
+
+.info-flex {
+    flex: 0 1 calc(50% - 50px);
+    box-sizing: border-box;
+}
+
+/* --> Footer */
+
 .footer-wrapper {
     margin-top: 30px;
 }
