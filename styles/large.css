@@ -157,6 +157,36 @@ footer .some-bar {
 /* RSPNSV: Desktops */
 
 @media all and (min-width: 1280px) {
+
+ /* --> Global */
+ section {
+    padding: 75px 35px;
+ }
+
+ /* --> Homepage content */
+
+#home-info .section-wrapper {
+    width: 70%;
+    margin: 0 0 0 30px;
+}
+
+#home-info .some-bar {
+    width: auto;
+}
+
+#home-info-content {
+    width: 65%;
+    margin-right: 50px;
+}
+
+#home-projects-header {
+    margin-left: -35px;
+}
+
+/* --> Info page content */
+    .info-flex {
+        flex: 0 1 calc(50% - 80px);
+    }
    
 }
 
