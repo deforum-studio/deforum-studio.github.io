@@ -224,12 +224,13 @@ nav ul li.nav-special {
 
 .btn-atn {
 	padding: 5px 10px;
-	border: 1px solid #FFF;
-	transition: padding 0.3s ease-in;
+	border: 1px solid rgba(255,255,255,0.8);
+	transition: all 0.3s ease-in;
 }
 
 .btn-atn:hover {
 	padding: 5px 15px;
+    border: 1px solid rgba(255,255,255,1);
 }
 
 a:link.btn-atn {text-decoration: none;}
@@ -257,12 +258,14 @@ a:hover.btn-atn  {text-decoration: none;}
 .some-bar li img, .support-us li img {
 	width: 40px;
 	height: auto;
-	transition: transform 0.3s ease-in;
+    opacity: 0.9;
+	transition: all 0.3s ease-in;
 }
 
 
 .some-bar li img:hover, .support-us li img:hover {
 	transform: scale(1.07);
+    opacity:1;
 }
 
 section {
@@ -308,9 +311,15 @@ section {
 
 #home-projects-header h2 {
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .project-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
     background: #000;
     width: 80%;
     padding: 20px 20px 50px 20px;
@@ -323,13 +332,30 @@ section {
     transform: scale(1.05);
 }
 
+.project-info h3 {
+    margin-bottom: 20px;
+}
+
+.project-info { 
+    flex: 8; 
+}
+
+.github-margin { 
+    flex: 1; 
+}
+
+.project-info-btn { 
+    flex: 1; 
+}
+
+
 .github-margin {
     margin: 20px 0 40px 0;
 }
 
 .commit-class, .star-class {
-    font-size: 90%;
-    opacity: 0.9;
+    font-size: 80%;
+    opacity: 0.85;
 }
 
 #home-madebydeforum .section-wrapper {
