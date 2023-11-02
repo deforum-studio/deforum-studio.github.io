@@ -263,3 +263,70 @@ nav {
    }
    
 }
+
+@media all and (min-width: 1920px) {
+
+ /* --> Global */
+
+  section {
+    padding: 110px 65px;
+  }
+
+  footer {
+    padding: 65px;
+  }
+
+/* --> Home page content */
+
+#home-info .section-wrapper {
+    width: 55%;
+}
+
+ #home-projects-header {
+    width: 50%;
+    margin-left: -65px;
+ }
+
+ #home-projects-header h2, #home-madebydeforum h2 {
+    font-size: 3em;
+ }
+
+/* --> Info page content */
+ .info-flex {
+    flex: 0 1 calc(50% - 110px);
+ }
+
+}
+
+@media all and (min-width: 2560px) {
+
+ /* --> Global */
+
+ #logo {
+    font-size:145px;
+ }
+
+ section {
+    padding: 120px 85px;
+ }
+
+ footer {
+    padding: 85px;
+ }
+
+ .info header, .info #noiseCanvas {height: 700px}
+
+ /* --> Home page content */
+
+#home-info-content {
+    width: 70%;
+}
+
+#home-projects-header {
+    width: 45%;
+    margin-left: -85px;
+}
+
+ /* --> Info page content */
+
+}
