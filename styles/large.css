@@ -1,13 +1,144 @@
 /* RSPNSV: Small desktops/Tablets landscape */
 
+/* --> Global */
+body {
+    font-size: 1.4em;
+}
 
+section {
+    padding: 65px 25px;
+}
+
+/* --> Header */
+
+#logo {
+    font-size: 65px;
+}
+
+.menu-icon {display: none;}
+
+nav {
+    background: transparent;
+    top: 0;
+    right: 10px!important;
+    left: auto;
+    width: 68%;
+    height: auto;
+    font-size: 1.2em;
+    overflow: visible;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li.nav-special {
+    margin-top: 0;
+}
+
+nav ul li.with-label {
+    position: relative;
+}
+
+nav ul li.with-label::after {
+    content: "coming soon";
+    display: block;
+    font-size: 60%;
+    opacity: 0.5;
+    position: absolute;
+    top: 110%;
+    right: 10px;
+}
+
+.comingsoon {
+    display: none;
+}
+
+#header-intro {
+ top: 35%;
+}
+
+/* --> Homepage content */
+
+.some-bar {
+    width: 40%;
+    float: right;
+}
+
+#home-info-content {
+    width: 55%;
+    float: left;
+}
+
+#home-info-content p {
+    margin: 0 0 50px 0;
+}
+
+#home-projects {
+       background: linear-gradient(40deg, 
+        black 6.67%, white 6.67%, white 13.34%, black 13.34%, 
+        black 20.01%, white 20.01%, white 26.68%, black 26.68%, 
+        black 33.35%, white 33.35%, white 40.02%, black 40.02%, 
+        black 46.69%, white 46.69%, white 53.36%, black 53.36%, 
+        black 60.03%, white 60.03%, white 66.7%, black 66.7%, 
+        black 73.37%, white 73.37%, white 80.04%, black 80.04%, 
+        black 86.71%, white 86.71%, white 93.38%, black 93.38%);
+}
+
+
+#home-projects-header {
+    margin-left: -25px;
+}
+
+#home-projects-wrapper, #mbd-video-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 50px;
+}
+
+.project-box, .mbd-video {
+    flex: 0 1 calc(50% - 50px);
+    box-sizing: border-box;
+}
+
+#home-getstarted {
+    text-align: center;
+}
+
+#home-getstarted .section-wrapper {
+    width: 60%;
+}
+
+.footer-wrapper {
+    margin-top: 30px;
+}
+
+.footer-box {
+  width: 20%;
+  float: left;
+  margin: 0px 30px 0 0;
+}
+
+footer .some-bar {
+    width: 25%;
+    float: right;
+    margin: 0;
+    text-align: right;
+}
+
+.credits {
+    margin-top: 100px;
+}
 
 /* RSPNSV: Desktops */
 
-@media all and (max-width: 1280px) {
+@media all and (min-width: 1280px) {
    
 }
 
-@media all and (max-width: 1280px) {
+@media all and (min-width: 1280px) {
    
 }

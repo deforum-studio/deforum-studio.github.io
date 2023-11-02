@@ -451,11 +451,11 @@ footer .some-bar {
     text-align: right;
     font-size: 70%;
     opacity: 0.5;
-    margin: 50px 0;
+    margin: 50px 0 0 0;
 }
 
 /* RSPNSV: Tablets portrait */
 
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) {
    
  }
