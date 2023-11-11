@@ -7,7 +7,7 @@ let gridHeight = 4; // Change as needed, in pixels
 let gridWidth = 4; // Change as needed, in pixels
 let markHeight = 2; // Change as needed, in pixels
 let markWidth = 1; // Change as needed, in pixels
-let markColor = [0, 0, 0, 255]; // RGBA color of the mark
+let markColor = canvas.getAttribute('data-color') === 'black' ? [0, 0, 0, 255] : [255, 255, 255, 255];
 let markOpacity = 1; // Opacity of the mark
 let offset = 2; // Change as needed, in pixels
 
