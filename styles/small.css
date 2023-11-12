@@ -198,6 +198,7 @@ nav ul li.nav-special {
 #btn-scrolldown {
 	width: 50px;
 	margin: 0 auto;
+    padding-top: 30px;
 	animation: bounce 1s infinite alternate;
 }
 
@@ -262,7 +263,6 @@ a:hover.btn-atn  {text-decoration: none;}
 	transition: all 0.3s ease-in;
 }
 
-
 .some-bar li img:hover, .support-us li img:hover {
 	transform: scale(1.07);
     opacity:1;
@@ -286,7 +286,6 @@ section {
 #home-info-content {margin-right: 15px;}
 #home-info-content p {margin: 50px 0;}
 #home-info-content .btn-atn {margin-left: 15px;}
-
 
 
 #home-projects {
