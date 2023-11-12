@@ -198,6 +198,7 @@ nav ul li.nav-special {
 #btn-scrolldown {
 	width: 50px;
 	margin: 0 auto;
+    padding-top: 30px;
 	animation: bounce 1s infinite alternate;
 }
 
@@ -262,7 +263,6 @@ a:hover.btn-atn  {text-decoration: none;}
 	transition: all 0.3s ease-in;
 }
 
-
 .some-bar li img:hover, .support-us li img:hover {
 	transform: scale(1.07);
     opacity:1;
@@ -288,15 +288,14 @@ section {
 #home-info-content .btn-atn {margin-left: 15px;}
 
 
-
 #home-projects {
-   background: linear-gradient(40deg, 
-        black 10%, white 10%, white 20%, black 20%, 
-        black 30%, white 30%, white 40%, black 40%, 
-        black 50%, white 50%, white 60%, black 60%, 
-        black 70%, white 70%, white 80%, black 80%, 
-        black 90%, white 90%);
-}
+    background: linear-gradient(40deg, 
+         black 0%, white 20%, 
+         black 20%, white 40%, 
+         black 40%, white 60%, 
+         black 60%, white 80%, 
+         black 80%, white 100%);
+ }
 
 #home-projects-header {
     background: #000;
