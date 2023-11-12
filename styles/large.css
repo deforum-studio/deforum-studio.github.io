@@ -77,15 +77,13 @@ nav ul li.with-label::after {
 }
 
 #home-projects {
-       background: linear-gradient(40deg, 
-        black 6.67%, white 6.67%, white 13.34%, black 13.34%, 
-        black 20.01%, white 20.01%, white 26.68%, black 26.68%, 
-        black 33.35%, white 33.35%, white 40.02%, black 40.02%, 
-        black 46.69%, white 46.69%, white 53.36%, black 53.36%, 
-        black 60.03%, white 60.03%, white 66.7%, black 66.7%, 
-        black 73.37%, white 73.37%, white 80.04%, black 80.04%, 
-        black 86.71%, white 86.71%, white 93.38%, black 93.38%);
-}
+    background: linear-gradient(40deg, 
+         black 0%, white 20%, 
+         black 20%, white 40%, 
+         black 40%, white 60%, 
+         black 60%, white 80%, 
+         black 80%, white 100%);
+ }
 
 
 #home-projects-header {

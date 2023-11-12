@@ -290,13 +290,13 @@ section {
 
 
 #home-projects {
-   background: linear-gradient(40deg, 
-        black 10%, white 10%, white 20%, black 20%, 
-        black 30%, white 30%, white 40%, black 40%, 
-        black 50%, white 50%, white 60%, black 60%, 
-        black 70%, white 70%, white 80%, black 80%, 
-        black 90%, white 90%);
-}
+    background: linear-gradient(40deg, 
+         black 0%, white 20%, 
+         black 20%, white 40%, 
+         black 40%, white 60%, 
+         black 60%, white 80%, 
+         black 80%, white 100%);
+ }
 
 #home-projects-header {
     background: #000;
