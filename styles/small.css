@@ -198,6 +198,7 @@ nav ul li.nav-special {
 #btn-scrolldown {
 	width: 50px;
 	margin: 0 auto;
+    padding-top: 50px;
 	animation: bounce 1s infinite alternate;
 }
 
@@ -286,7 +287,6 @@ section {
 #home-info-content {margin-right: 15px;}
 #home-info-content p {margin: 50px 0;}
 #home-info-content .btn-atn {margin-left: 15px;}
-
 
 
 #home-projects {
