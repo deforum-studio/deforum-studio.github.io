@@ -117,6 +117,10 @@ nav ul li.with-label::after {
     text-align: left;
 }
 
+#info-more .some-bar {
+    float: none;
+}
+
 .info-content-wrapper {
    display: flex;
    flex-wrap: wrap;
@@ -196,6 +200,10 @@ footer .some-bar {
         flex: 0 1 calc(50% - 80px);
     }
    
+}
+
+footer {
+    padding: 50px 80px;
 }
 
 @media all and (min-width: 1536px) {
