@@ -433,6 +433,15 @@ section {
   background: #070707;
 }
 
+.support-us {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .support-us li:not(:last-child) {
+    margin-right: 20px; /* Adjust as needed */
+  }
+
 #info-more .support-us {
     margin-top: 50px;
 }
