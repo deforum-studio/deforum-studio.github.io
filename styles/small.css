@@ -374,15 +374,15 @@ section {
     margin-bottom: 50px;
 }
 
-.mbd-video {
+.mwd-video {
     margin-bottom: 50px;
 }
 
-.mbd-video:last-child {
+.mwd-video:last-child {
     margin-bottom: 0;
 }
 
-.mbd-byline {
+.mwd-byline {
     font-size: 80%;
     opacity: 0.7;
     text-align: right;
