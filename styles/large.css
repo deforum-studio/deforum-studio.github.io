@@ -76,18 +76,10 @@ nav ul li.with-label::after {
     margin: 0 0 50px 0;
 }
 
-#home-projects {
-    background: linear-gradient(40deg, 
-         black 0%, white 20%, 
-         black 20%, white 40%, 
-         black 40%, white 60%, 
-         black 60%, white 80%, 
-         black 80%, white 100%);
- }
-
 
 #home-projects-header {
     margin-left: -25px;
+    padding: 40px 40px 53px 40px;
 }
 
 #home-projects-wrapper, #mbd-video-wrapper {
@@ -228,15 +220,6 @@ nav {
 
  #header-intro p {
     font-size: 1.5em;
- }
-
- #home-projects {
-    background: linear-gradient(40deg, 
-         black 0%, white 20%, 
-         black 20%, white 40%, 
-         black 40%, white 60%, 
-         black 60%, white 80%, 
-         black 80%, white 100%);
  }
 
  #home-projects-header {
