@@ -293,6 +293,7 @@ section {
 
 
 #home-projects {
+    position: relative;
     background: linear-gradient(45deg, 
         rgba(0, 0, 0, 0) 0%, white 20%, 
         rgba(0, 0, 0, 0) 20%, white 40%, 
@@ -300,6 +301,19 @@ section {
         rgba(0, 0, 0, 0) 60%, white 80%, 
         rgba(0, 0, 0, 0) 80%, white 100%);
  }
+
+ #home-projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/noise.jpg'); /* Path to your noise texture */
+    opacity: 0.08; /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure it's above the background gradient */
+    pointer-events: none; /* Allows clicks to pass through to the element below */
+}
 
 #home-projects-header {
     background: #000;
