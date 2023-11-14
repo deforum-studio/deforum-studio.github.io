@@ -293,12 +293,12 @@ section {
 
 
 #home-projects {
-    background: linear-gradient(40deg, 
-         black 0%, white 20%, 
-         black 20%, white 40%, 
-         black 40%, white 60%, 
-         black 60%, white 80%, 
-         black 80%, white 100%);
+    background: linear-gradient(45deg, 
+        rgba(0, 0, 0, 0) 0%, white 20%, 
+        rgba(0, 0, 0, 0) 20%, white 40%, 
+        rgba(0, 0, 0, 0) 40%, white 60%, 
+        rgba(0, 0, 0, 0) 60%, white 80%, 
+        rgba(0, 0, 0, 0) 80%, white 100%);
  }
 
 #home-projects-header {
