@@ -98,7 +98,7 @@ nav ul li.with-label::after {
     margin-top: 50px;
 }
 
-.project-box, .mbd-video {
+.project-box, .mwd-video {
     flex: 0 1 calc(50% - 50px);
     box-sizing: border-box;
 }
@@ -247,13 +247,18 @@ nav {
     flex: 0 1 calc(25% - 50px);
  }
 
- #home-madebydeforum h2 {
+ #home-madewithdeforum h2 {
+    width: 25%;
     float: right;
  }
 
- #mbd-video-wrapper {
+ #mwd-video-wrapper, #mwd-intro {
     margin-top: 0;
     width: 70%;
+    float: left;
+ }
+
+ #home-madewithdeforum .btn-atn {
     float: left;
  }
 
