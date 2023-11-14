@@ -98,7 +98,7 @@ nav ul li.with-label::after {
     margin-top: 50px;
 }
 
-.project-box, .mbd-video {
+.project-box, .mwd-video {
     flex: 0 1 calc(50% - 50px);
     box-sizing: border-box;
 }
