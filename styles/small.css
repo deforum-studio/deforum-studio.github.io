@@ -223,6 +223,8 @@ nav ul li.nav-special {
 
 /* Global elements */
 
+.bt-push {margin-bottom: 30px;} /* Use this in a p tag to push buttons */
+
 .btn-atn {
 	padding: 5px 10px;
 	border: 1px solid rgba(255,255,255,0.8);
