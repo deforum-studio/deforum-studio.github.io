@@ -82,7 +82,7 @@ nav ul li.with-label::after {
     padding: 40px 40px 53px 40px;
 }
 
-#home-projects-wrapper, #mbd-video-wrapper {
+#home-projects-wrapper, #mwd-video-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
