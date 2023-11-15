@@ -231,13 +231,28 @@ nav ul li.nav-special {
 	transition: all 0.3s ease-in;
 }
 
+.btn-atn2 {
+	padding: 10px 15px;
+    font-size: 1.2em;
+	border: 1px solid rgba(255,255,255,0.8);
+	transition: all 0.3s ease-in;
+}
+
 .btn-atn:hover {
 	padding: 5px 15px;
     border: 1px solid rgba(255,255,255,1);
 }
 
+.btn-atn2:hover {
+	padding: 10px 20px;
+    border: 1px solid rgba(255,255,255,1);
+}
+
 a:link.btn-atn {text-decoration: none;}
 a:hover.btn-atn  {text-decoration: none;}
+
+a:link.btn-atn2 {text-decoration: none;}
+a:hover.btn-atn2  {text-decoration: none;}
 
 .some-bar {
 	text-align: right;
