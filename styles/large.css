@@ -241,6 +241,10 @@ nav {
     float: left;
  }
 
+#mwd-intro {
+    margin-bottom: 30px;
+}
+
  #home-madewithdeforum .btn-atn {
     float: left;
  }
