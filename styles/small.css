@@ -351,12 +351,13 @@ section {
     transform: scale(1.05);
 }
 
-.project-info h3 {
+.project-title {
     margin-bottom: 20px;
+    flex: 3;
 }
 
 .project-info { 
-    flex: 8; 
+    flex: 5; 
 }
 
 .github-margin { 
