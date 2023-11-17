@@ -126,6 +126,31 @@ nav ul li.with-label::after {
     box-sizing: border-box;
 }
 
+/* --> Terms and Privacy */
+
+.terms header {
+    height: 600px;
+    overflow: hidden;
+}
+
+.terms #noiseCanvas {
+    height: 600px;
+}
+
+
+#terms {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.terms #header-intro {
+    top: 300px;
+}
+
+.terms #header-intro h1 {
+    font-size: 2.6em;
+}
+
 /* --> Footer */
 
 .footer-wrapper {

@@ -493,6 +493,35 @@ section {
     opacity: 0.5;
 }
 
+/* Terms and Privacy Pages */
+
+.terms header {
+    height: 400px;
+    overflow: hidden;
+}
+
+.terms #noiseCanvas {
+    height: 400px;
+}
+
+
+.terms #header-intro h1 {
+    font-size: 1.6em;
+}
+
+#terms h2, h3 {
+    margin-bottom: 30px;
+}
+
+#terms p {
+    margin-bottom: 30px;
+}
+
+#terms-header p {
+    font-size: 80%;
+    opacity: 0.8;
+}
+
 /* Footer */
 
 footer {
