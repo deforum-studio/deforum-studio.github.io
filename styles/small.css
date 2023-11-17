@@ -504,6 +504,10 @@ section {
     height: 400px;
 }
 
+.privacy-list {
+    margin: 0 0 30px 30px;
+}
+
 
 .terms #header-intro h1 {
     font-size: 1.6em;
