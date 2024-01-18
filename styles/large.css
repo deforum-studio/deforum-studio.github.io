@@ -46,7 +46,7 @@ nav ul li.with-label {
 }
 
 nav ul li.with-label::after {
-    content: "coming soon";
+    content: "";
     display: block;
     font-size: 60%;
     opacity: 0.5;
