@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK6FGJEY5M"></script>
-  <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
 
-     gtag('config', 'G-EK6FGJEY5M');
-   </script>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK6FGJEY5M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EK6FGJEY5M');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <meta name="title" content="deforum">
     <meta name="description" content="Home of the deforum community">
-    <meta name="keywords" content="art, ai, ai art, machine learning, artwork, notebook, python, neural networks, stable diffusion, generative art">
+    <meta name="keywords"
+        content="art, ai, ai art, machine learning, artwork, notebook, python, neural networks, stable diffusion, generative art">
     <meta property="og:title" content="deforum">
     <meta property="og:image" content="img/ico.png">
     <meta property="og:description" content="Home of the deforum community">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet"> <!-- Add this line -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1024px)">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
@@ -29,105 +33,124 @@
     <script type="text/javascript" src="scripts/scripts.js"></script>
     <title>deforum</title>
 </head>
+
 <body class="info">
-<header>
-<canvas id="noiseCanvas" data-color="white"></canvas>
-<script src="scripts/noise.js"></script>
-<div id="logo">
-{d}
-</div>
-<input type="checkbox" id="menu-toggle" />
-                    <label for="menu-toggle" class="menu-icon">
-                     <span></span>
-                   </label>
-<nav>
- <ul>   
-   <li><a href="index.html">home</a></li>
-   <li><a href="index.html#home-projects">projects</a></li>
-   <li><a href="https://deforum.github.io/">docs</a></li>
-   <li><a href="info.html">info</a></li>
-   <li class="nav-special"><a class="btn-atn" href="https://discord.gg/deforum">discord</a></li>
-   <li class="nav-special with-label"><a class="btn-atn" href="https://app.deforum.art/">webapp</a><label class="comingsoon clear">coming soon</label></li>
- </ul>
-</nav>
+    <header>
+        <canvas id="noiseCanvas" data-color="white"></canvas>
+        <script src="scripts/noise.js"></script>
+        <div id="logo">
+            <a href="index.html">{d}</a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="index.html#home-projects">projects</a></li>
+                <li><a href="https://deforum.github.io/">docs</a></li>
+                <li><a href="info.html">info</a></li>
+                <li class="nav-special"><a class="btn-atn" href="https://discord.gg/deforum">discord</a></li>
+                <li class="nav-special with-label"><a class="btn-atn" href="https://app.deforum.art/">webapp</a><label
+                        class="comingsoon clear">coming soon</label></li>
+            </ul>
+        </nav>
 
-<div id="header-intro">
-      <h1>{info}</h1>
-</div>
-</header>
+        <div id="header-intro">
+            <h1>{info}</h1>
+        </div>
+    </header>
 
-<section id="info-about">
-  <div class="section-wrapper">
-    <div class="some-bar">
-        <ul>
-          <li><a href="https://discord.gg/deforum"><img src="assets/some/discord.svg"></a></li>
-          <li><a href="https://twitter.com/deforum_art"><img src="assets/some/twitter.svg"></a></li>
-          <li><a href="https://instagram.com/deforum_art"><img src="assets/some/instagram.svg"></a></li>
-          <li><a href="https://www.youtube.com/@deforum_art"><img src="assets/some/youtube.svg"></a></li>
-          <li><a href="https://github.com/deforum-art"><img src="assets/some/github.svg"></a></li>
-        </ul>  
-        <p>connect with us</p>
-    </div>
- 
-   <div class="info-content-wrapper">
-        <div class="info-left info-flex">
-            <h2>The<br /> community</h2>
-            <p>Deforum is an AI animation platform and community that emerged after the public availability of Stable Diffusion. It is an open-source project, emphasizing collaborative development and shared innovation. The community-driven initiative first established its presence through a dedicated Discord server. It draws on the collective expertise of a diverse group of individuals passionate about AI and animation. The ongoing maintenance and expansion of Deforum are handled entirely by volunteer contributors. The project aims to empower everyone to experiment with and create animations, regardless of their technical background.</p>
-        </div>
-        <div class="info-right info-flex">
-            <h2>Studio/<br>
-            Company</h2>
-            <p>Recognizing the potential to broaden the reach of generative AI tools, key members of our community took steps to form Deforum Studio. This entity is dedicated to enhancing user experience and making advanced animation tools accessible to a wider audience. One of our core missions is to demystify the complexities of these tools, paving the way for users to develop professional proficiency with generative AI.</p>
-            <br>
-            <p>Our first step in this direction is the Discord bot - a straightforward and user-friendly introduction to Deforum. We are currently working on developing a web app, which will serve as a bridge to more advanced features and applications.</p>
-        </div>
-    </div>
-   </div> 
-</section>
-<section id="info-more">
-   <div class="section-wrapper">
-    <div class="info-content-wrapper">
-        <div class="info-left info-flex">
-            <h2>Ethos</h2>
-            <h3 class="quote">"Creativity Thrives in Open Collaboration"</h3>
-            <p>We are committed to openly sharing information and resources, facilitating user understanding of our tools. Our goal is not just to provide access to technology but to empower our users to harness it effectively, ensuring they have the knowledge and confidence to realize their creative potential.</p>
-            </p>
-        </div>
-        <div class="info-right info-flex">
-            <h2>Support<br >
-            Us</h2>
-            <p>Open-source is the heartbeat of collective innovation. Show your support and fuel the future.</p>
+    <section id="info-about">
+        <div class="section-wrapper">
             <div class="some-bar">
-                <ul class="support-us">
-                 <li><a href="https://www.patreon.com/deforum"><img src="assets/some/patreon.svg"></a></li>
-                 <li><a href="https://www.paypal.com/paypalme/deforum"><img src="assets/some/paypal.svg"></a></li>
+                <ul>
+                    <li><a href="https://discord.gg/deforum"><img src="assets/some/discord.svg"></a></li>
+                    <li><a href="https://twitter.com/deforum_art"><img src="assets/some/twitter.svg"></a></li>
+                    <li><a href="https://instagram.com/deforum_art"><img src="assets/some/instagram.svg"></a></li>
+                    <li><a href="https://www.youtube.com/@deforum_art"><img src="assets/some/youtube.svg"></a></li>
+                    <li><a href="https://github.com/deforum-art"><img src="assets/some/github.svg"></a></li>
+                </ul>
+                <p>connect with us</p>
+            </div>
+
+            <div class="info-content-wrapper">
+                <div class="info-left info-flex">
+                    <h2>The<br /> community</h2>
+                    <p>Deforum is an AI animation platform and community that emerged after the public availability of
+                        Stable Diffusion. It is an open-source project, emphasizing collaborative development and shared
+                        innovation. The community-driven initiative first established its presence through a dedicated
+                        Discord server. It draws on the collective expertise of a diverse group of individuals
+                        passionate about AI and animation. The ongoing maintenance and expansion of Deforum are handled
+                        entirely by volunteer contributors. The project aims to empower everyone to experiment with and
+                        create animations, regardless of their technical background.</p>
+                </div>
+                <div class="info-right info-flex">
+                    <h2>Studio/<br>
+                        Company</h2>
+                    <p>Recognizing the potential to broaden the reach of generative AI tools, key members of our
+                        community took steps to form Deforum Studio. This entity is dedicated to enhancing user
+                        experience and making advanced animation tools accessible to a wider audience. One of our core
+                        missions is to demystify the complexities of these tools, paving the way for users to develop
+                        professional proficiency with generative AI.</p>
+                    <br>
+                    <p>Our first step in this direction is the Discord bot - a straightforward and user-friendly
+                        introduction to Deforum. We are currently working on developing a web app, which will serve as a
+                        bridge to more advanced features and applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="info-more">
+        <div class="section-wrapper">
+            <div class="info-content-wrapper">
+                <div class="info-left info-flex">
+                    <h2>Ethos</h2>
+                    <h3 class="quote">"Creativity Thrives in Open Collaboration"</h3>
+                    <p>We are committed to openly sharing information and resources, facilitating user understanding of
+                        our tools. Our goal is not just to provide access to technology but to empower our users to
+                        harness it effectively, ensuring they have the knowledge and confidence to realize their
+                        creative potential.</p>
+                    </p>
+                </div>
+                <div class="info-right info-flex">
+                    <h2>Support<br>
+                        Us</h2>
+                    <p>Open-source is the heartbeat of collective innovation. Show your support and fuel the future.</p>
+                    <div class="some-bar">
+                        <ul class="support-us">
+                            <li><a href="https://www.patreon.com/deforum"><img src="assets/some/patreon.svg"></a></li>
+                            <li><a href="https://www.paypal.com/paypalme/deforum"><img src="assets/some/paypal.svg"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper clear">
+            <div class="footer-box">
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="some-bar">
+                <ul>
+                    <li><a href="https://discord.gg/deforum"><img src="assets/some/discord.svg"></a></li>
+                    <li><a href="https://twitter.com/deforum_art"><img src="assets/some/twitter.svg"></a></li>
+                    <li><a href="https://instagram.com/deforum_art"><img src="assets/some/instagram.svg"></a></li>
+                    <li><a href="https://www.youtube.com/@deforum_art"><img src="assets/some/youtube.svg"></a></li>
+                    <li><a href="https://github.com/deforum-art"><img src="assets/some/github.svg"></a></li>
                 </ul>
             </div>
         </div>
-    </div>
-  </div>
-</section>
-<footer>
-  <div class="footer-wrapper clear">
-    <div class="footer-box">
-         <ul>
-          <li><a href="terms.html">Terms of Service</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-         </ul>
-    </div>
-    <div class="some-bar">
-         <ul>
-          <li><a href="https://discord.gg/deforum"><img src="assets/some/discord.svg"></a></li>
-          <li><a href="https://twitter.com/deforum_art"><img src="assets/some/twitter.svg"></a></li>
-          <li><a href="https://instagram.com/deforum_art"><img src="assets/some/instagram.svg"></a></li>
-          <li><a href="https://www.youtube.com/@deforum_art"><img src="assets/some/youtube.svg"></a></li>
-          <li><a href="https://github.com/deforum-art"><img src="assets/some/github.svg"></a></li>
-        </ul>  
-    </div>
-    </div>
-    <div class="credits">
-        &copy; 2023 deforum
-    </div>
-</footer>
+        <div class="credits">
+            &copy; 2023 deforum
+        </div>
+    </footer>
 </body>
+
 </html>
