@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK6FGJEY5M"></script>
-  <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
 
-     gtag('config', 'G-EK6FGJEY5M');
-   </script>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK6FGJEY5M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EK6FGJEY5M');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <meta name="title" content="deforum">
     <meta name="description" content="Home of the deforum community">
-    <meta name="keywords" content="art, ai, ai art, machine learning, artwork, notebook, python, neural networks, stable diffusion, generative art">
+    <meta name="keywords"
+        content="art, ai, ai art, machine learning, artwork, notebook, python, neural networks, stable diffusion, generative art">
     <meta property="og:title" content="deforum">
     <meta property="og:image" content="assets/icon/icon-1024x1024.png">
     <meta property="og:description" content="Home of the deforum community">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet"> <!-- Add this line -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1024px)">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
@@ -30,198 +34,241 @@
     <script src="scripts/scripts.js"></script>
     <title>deforum</title>
 </head>
+
 <body class="home">
 
-<header>
-<canvas id="noiseCanvas" data-color="black"></canvas>
-<script src="scripts/grid.js"></script>
-<video id="background-video" autoplay loop muted poster="assets/header.mp4"> 
-<source src="assets/header.mp4" type="video/mp4">
-</video> 
+    <header>
+        <canvas id="noiseCanvas" data-color="black"></canvas>
+        <script src="scripts/grid.js"></script>
+        <video id="background-video" autoplay loop muted poster="assets/header.mp4">
+            <source src="assets/header.mp4" type="video/mp4">
+        </video>
 
-<div id="logo">
-{d}
-</div>
+        <div id="logo">
+            {d}
+        </div>
 
-<input type="checkbox" id="menu-toggle" />
-                    <label for="menu-toggle" class="menu-icon">
-                     <span></span>
-                   </label>
-<nav>
- <ul>   
-   <li><a href="index.html">home</a></li>
-   <li><a href="#home-projects">projects</a></li>
-   <li><a href="https://deforum.github.io/">docs</a></li>
-   <li><a href="info.html">info</a></li>
-   <li class="nav-special"><a class="btn-atn" href="https://discord.gg/deforum">discord</a></li>
-   <li class="nav-special with-label"><a class="btn-atn" href="https://app.deforum.art/">webapp</a><label class="comingsoon clear">coming soon</label></li>
- </ul>
-</nav>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#home-projects">projects</a></li>
+                <li><a href="https://deforum.github.io/">docs</a></li>
+                <li><a href="info.html">info</a></li>
+                <li class="nav-special"><a class="btn-atn" href="https://discord.gg/deforum">discord</a></li>
+                <li class="nav-special with-label"><a class="btn-atn" href="https://app.deforum.art/">webapp</a><label
+                        class="comingsoon clear">coming soon</label></li>
+            </ul>
+        </nav>
 
-<div id="header-intro">
-  <h1>{deforum.art}</h1>
-  <p>Deforum leverages the power of Stable Diffusion to generate evolving AI visuals. Animate with Intelligence.</p>
-  <a class="btn-atn2" href="https://app.deforum.art/beta-signup">Join the Beta</a>
-  <div id="btn-scrolldown">
-    <a href="#home-info"><img src="assets/down-arrow.svg"></a>
-  </div>
-</div>
-
-
-</header>
-
-<section id="home-info" class="clear">
-  <div class="section-wrapper clear">
-    <div class="some-bar">
-        <ul>
-          <li><a href="https://discord.gg/deforum"><img src="assets/some/discord.svg"></a></li>
-          <li><a href="https://twitter.com/deforum_art"><img src="assets/some/twitter.svg"></a></li>
-          <li><a href="https://instagram.com/deforum_art"><img src="assets/some/instagram.svg"></a></li>
-          <li><a href="https://www.youtube.com/@deforum_art"><img src="assets/some/youtube.svg"></a></li>
-          <li><a href="https://github.com/deforum-art"><img src="assets/some/github.svg"></a></li>
-        </ul>  
-        <p>connect with us</p>
-    </div>
-    <div id="home-info-content">
-        <p>Deforum is more than just a platform; it is a vibrant, open-source community where innovative developers and artists are committed to pushing the boundaries of AI animation. Building upon the work of Disco Diffusion, PyTTI, and VQGAN+CLIP, Deforum began as a powerful Colab Notebook and quickly evolved into an extension for the Automatic1111 WebUI, packed full of features that cater to the diverse needs and creative ambitions of the community, all available as open-source software. Now, it steps into new territory as an easy-to-use Discord bot.</p>
-        <a class="btn-atn" href="info.html">Read more</a>
-    </div>
- </div>
-</section>
-
-<section id="home-projects">
- <div id="home-projects-header">
-    <h2>Open Source Projects</h2>
-    <p>The Deforum ecosystem encompasses several tools enhancing digital art creation with Stable Diffusion. The main offering is the Deforum Web UI extension, which is integrated into the Automatic Web UI, delivering advanced features such as video style transfer, motion effects, and frame upscaling. Users can easily start by finding the extension in the UI's extension tab or downloading it directly.</p>
- </div>
- <div id="home-projects-wrapper">
-    <div class="project-box">
-        
-        <div class="project-title">
-            <h3>Deforum Web UI extension</h3>
-        </div>
-        <div class="project-info">
-            <p>Deforum extension for the Automatic Web UI, the most feature-rich implementation of Deforum.</p>
-        </div>
-        <div class="github-margin"> 
-            <p class="commit-class" id="commit-date1"></p>
-            <p class="star-class" id="star-count1"></p>
-        </div>
-        <div class="project-info-btn">
-            <a class="btn-atn" href="https://github.com/deforum-art/sd-webui-deforum/">Go to Github</a>
-        </div>
-    </div>
-    <div class="project-box">
-        <div class="project-title">
-            <h3>Deforum Colab</h3>
-        </div>
-        <div class="project-info">
-            <p>Original implementation of Deforum Stable Diffusion optimized for Google Colab.</p>
-        </div>
-        <div class="github-margin"> 
-            <p class="commit-class" id="commit-date2"></p>
-            <p class="star-class" id="star-count2"></p>
-        </div>
-        <div class="project-info-btn">
-            <a class="btn-atn" href="https://colab.research.google.com/github/deforum-art/deforum-stable-diffusion/blob/main/Deforum_Stable_Diffusion.ipynb">Go to Colab</a>
-        </div>
-    </div>
-    <div class="project-box">
-        <div class="project-title">
-            <h3>Deforum Parseq</h3>
-        </div>
-        <div class="project-info">
-            <p>Parseq provides advanced control and audio syncing for the Deforum Web UI Extension.</p>
-        </div>
-        <div class="github-margin"> 
-            <p class="commit-class" id="commit-date3"></p>
-            <p class="star-class" id="star-count3"></p>
-        </div>
-        <div class="project-info-btn">
-            <a class="btn-atn" href="https://sd-parseq.web.app/deforum">Open App</a>
-        </div>
-    </div>
-    <div class="project-box">
-        <div class="project-title">
-            <h3>aiNodes</h3>
-        </div>
-        <div class="project-info">
-            <p>Simple and easy-to-use Python-based AI node engine.</p>
-        </div>
-        <div class="github-margin"> 
-            <p class="commit-class" id="commit-date4"></p>
-            <p class="star-class" id="star-count4"></p>
-        </div>
-        <div class="project-info-btn">
-            <a class="btn-atn" href="https://github.com/XmYx/ainodes-engine/">Go to Github</a>
-        </div>
-    </div>
- </div>
-</section>
-
-<section id="home-madewithdeforum">
-    <div class="section-wrapper clear">
-        <h2>Deforum <br />Discord Bot</h2>
-          <div id="mwd-intro">
-            <p class="bt-push">Our discord bot is the easiest way to use deforum. Simply type in your prompt, and choose one of our 25 motion presets. You'll also have the option to style your animation with 77 prompt modifiers and choose between landscape, portrait, and square aspect ratios. Enjoy the freedom to create detailed AI animations and generate striking visuals, all without the need for a powerful home computer. Examples below.</p>
-            <a class="btn-atn" href="https://app.deforum.art/beta-signup">Join the Beta</a>
-          </div>
-        <div id="mwd-video-wrapper">
-            <div class="mwd-video">
-                <div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/884267804?h=03ce11dc3d&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                <p class="mwd-byline">motion_preset: Evolve-Pulse</p>
-            </div>
-            <div class="mwd-video">
-                <div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/884267740?h=03ce11dc3d&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                <p class="mwd-byline">motion_preset: Shapes-Kaleidoscope</p>
-            </div>
-            <div class="mwd-video">
-                <div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/884264954?h=03ce11dc3d&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                <p class="mwd-byline">motion_preset: Fly-Through</p>
-            </div>
-            <div class="mwd-video">
-                <div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/884221768?h=03ce11dc3d&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                <p class="mwd-byline">motion_preset: Evolve-Glitch</p>
-            </div>
-            <div class="mwd-video">
-                <div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/884222785?h=03ce11dc3d&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                <p class="mwd-byline">motion_preset: Shapes-Circles</p>
-            </div>
-            <div class="mwd-video">
-                <div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/884225806?h=03ce11dc3d&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                <p class="mwd-byline">motion_preset: Move-Warp</p>
+        <div id="header-intro">
+            <h1>{deforum.art}</h1>
+            <p>Deforum leverages the power of Stable Diffusion to generate evolving AI visuals. Animate with
+                Intelligence.</p>
+            <a class="btn-atn2" href="https://app.deforum.art/beta-signup">Join the Beta</a>
+            <div id="btn-scrolldown">
+                <a href="#home-info"><img src="assets/down-arrow.svg"></a>
             </div>
         </div>
-    </div>
-</section>
-<section id="home-getstarted" style="display: none;">
-    <div class="section-wrapper">
-        <h2>Get started</h2>
-        <p>Ready to start your own journey of self-expression? In our docs you will find all you need to getting started with deforum.</p>
-        <a class="btn-atn" href="https://github.com/deforum-art/sd-webui-deforum/wiki">Go to Guides</a>
-    </div>
-</section>
-<footer>
-  <div class="footer-wrapper clear">
-     <div class="footer-box">
-         <ul>
-          <li><a href="terms.html">Terms of Service</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-         </ul>
-    </div>
-    <div class="some-bar">
-         <ul>
-          <li><a href="https://discord.gg/deforum"><img src="assets/some/discord.svg"></a></li>
-          <li><a href="https://twitter.com/deforum_art"><img src="assets/some/twitter.svg"></a></li>
-          <li><a href="https://instagram.com/deforum_art"><img src="assets/some/instagram.svg"></a></li>
-          <li><a href="https://www.youtube.com/@deforum_art"><img src="assets/some/youtube.svg"></a></li>
-          <li><a href="https://github.com/deforum-art"><img src="assets/some/github.svg"></a></li>
-        </ul>  
-    </div>
-  </div>
-    <div class="credits">
-        &copy; 2023 deforum
-    </div>
-</footer>
+
+
+    </header>
+
+    <section id="home-info" class="clear">
+        <div class="section-wrapper clear">
+            <div class="some-bar">
+                <ul>
+                    <li><a href="https://discord.gg/deforum"><img src="assets/some/discord.svg"></a></li>
+                    <li><a href="https://twitter.com/deforum_art"><img src="assets/some/twitter.svg"></a></li>
+                    <li><a href="https://instagram.com/deforum_art"><img src="assets/some/instagram.svg"></a></li>
+                    <li><a href="https://www.youtube.com/@deforum_art"><img src="assets/some/youtube.svg"></a></li>
+                    <li><a href="https://github.com/deforum-art"><img src="assets/some/github.svg"></a></li>
+                </ul>
+                <p>connect with us</p>
+            </div>
+            <div id="home-info-content">
+                <p>Deforum is more than just a platform; it is a vibrant, open-source community where innovative
+                    developers and artists are committed to pushing the boundaries of AI animation. Building upon the
+                    work of Disco Diffusion, PyTTI, and VQGAN+CLIP, Deforum began as a powerful Colab Notebook and
+                    quickly evolved into an extension for the Automatic1111 WebUI, packed full of features that cater to
+                    the diverse needs and creative ambitions of the community, all available as open-source software.
+                    Now, it steps into new territory as an easy-to-use Discord bot.</p>
+                <a class="btn-atn" href="info.html">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="home-projects">
+        <div id="home-projects-header">
+            <h2>Open Source Projects</h2>
+            <p>The Deforum ecosystem encompasses several tools enhancing digital art creation with Stable Diffusion. The
+                main offering is the Deforum Web UI extension, which is integrated into the Automatic Web UI, delivering
+                advanced features such as video style transfer, motion effects, and frame upscaling. Users can easily
+                start by finding the extension in the UI's extension tab or downloading it directly.</p>
+        </div>
+        <div id="home-projects-wrapper">
+            <div class="project-box">
+
+                <div class="project-title">
+                    <h3>Deforum Web UI extension</h3>
+                </div>
+                <div class="project-info">
+                    <p>Deforum extension for the Automatic Web UI, the most feature-rich implementation of Deforum.</p>
+                </div>
+                <div class="github-margin">
+                    <p class="commit-class" id="commit-date1"></p>
+                    <p class="star-class" id="star-count1"></p>
+                </div>
+                <div class="project-info-btn">
+                    <a class="btn-atn" href="https://github.com/deforum-art/sd-webui-deforum/">Go to Github</a>
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project-title">
+                    <h3>Deforum Colab</h3>
+                </div>
+                <div class="project-info">
+                    <p>Original implementation of Deforum Stable Diffusion optimized for Google Colab.</p>
+                </div>
+                <div class="github-margin">
+                    <p class="commit-class" id="commit-date2"></p>
+                    <p class="star-class" id="star-count2"></p>
+                </div>
+                <div class="project-info-btn">
+                    <a class="btn-atn"
+                        href="https://colab.research.google.com/github/deforum-art/deforum-stable-diffusion/blob/main/Deforum_Stable_Diffusion.ipynb">Go
+                        to Colab</a>
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project-title">
+                    <h3>Deforum Parseq</h3>
+                </div>
+                <div class="project-info">
+                    <p>Parseq provides advanced control and audio syncing for the Deforum Web UI Extension.</p>
+                </div>
+                <div class="github-margin">
+                    <p class="commit-class" id="commit-date3"></p>
+                    <p class="star-class" id="star-count3"></p>
+                </div>
+                <div class="project-info-btn">
+                    <a class="btn-atn" href="https://sd-parseq.web.app/deforum">Open App</a>
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project-title">
+                    <h3>aiNodes</h3>
+                </div>
+                <div class="project-info">
+                    <p>Simple and easy-to-use Python-based AI node engine.</p>
+                </div>
+                <div class="github-margin">
+                    <p class="commit-class" id="commit-date4"></p>
+                    <p class="star-class" id="star-count4"></p>
+                </div>
+                <div class="project-info-btn">
+                    <a class="btn-atn" href="https://github.com/XmYx/ainodes-engine/">Go to Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home-madewithdeforum">
+        <div class="section-wrapper clear">
+            <h2>Deforum <br />Discord Bot</h2>
+            <div id="mwd-intro">
+                <p class="bt-push">Our discord bot is the easiest way to use deforum. Simply type in your prompt, and
+                    choose one of our 25 motion presets. You'll also have the option to style your animation with 77
+                    prompt modifiers and choose between landscape, portrait, and square aspect ratios. Enjoy the freedom
+                    to create detailed AI animations and generate striking visuals, all without the need for a powerful
+                    home computer. Examples below.</p>
+                <a class="btn-atn" href="https://app.deforum.art/beta-signup">Join the Beta</a>
+            </div>
+            <div id="mwd-video-wrapper">
+                <div class="mwd-video">
+                    <div style="padding:66.67% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/884267804?h=03ce11dc3d&title=0&byline=0&portrait=0"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <p class="mwd-byline">motion_preset: Evolve-Pulse</p>
+                </div>
+                <div class="mwd-video">
+                    <div style="padding:66.67% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/884267740?h=03ce11dc3d&title=0&byline=0&portrait=0"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <p class="mwd-byline">motion_preset: Shapes-Kaleidoscope</p>
+                </div>
+                <div class="mwd-video">
+                    <div style="padding:66.67% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/884264954?h=03ce11dc3d&title=0&byline=0&portrait=0"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <p class="mwd-byline">motion_preset: Fly-Through</p>
+                </div>
+                <div class="mwd-video">
+                    <div style="padding:66.67% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/884221768?h=03ce11dc3d&title=0&byline=0&portrait=0"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <p class="mwd-byline">motion_preset: Evolve-Glitch</p>
+                </div>
+                <div class="mwd-video">
+                    <div style="padding:66.67% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/884222785?h=03ce11dc3d&title=0&byline=0&portrait=0"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <p class="mwd-byline">motion_preset: Shapes-Circles</p>
+                </div>
+                <div class="mwd-video">
+                    <div style="padding:66.67% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/884225806?h=03ce11dc3d&title=0&byline=0&portrait=0"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <p class="mwd-byline">motion_preset: Move-Warp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="home-getstarted" style="display: none;">
+        <div class="section-wrapper">
+            <h2>Get started</h2>
+            <p>Ready to start your own journey of self-expression? In our docs you will find all you need to getting
+                started with deforum.</p>
+            <a class="btn-atn" href="https://github.com/deforum-art/sd-webui-deforum/wiki">Go to Guides</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper clear">
+            <div class="footer-box">
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="some-bar">
+                <ul>
+                    <li><a href="https://discord.gg/deforum"><img src="assets/some/discord.svg"></a></li>
+                    <li><a href="https://twitter.com/deforum_art"><img src="assets/some/twitter.svg"></a></li>
+                    <li><a href="https://instagram.com/deforum_art"><img src="assets/some/instagram.svg"></a></li>
+                    <li><a href="https://www.youtube.com/@deforum_art"><img src="assets/some/youtube.svg"></a></li>
+                    <li><a href="https://github.com/deforum-art"><img src="assets/some/github.svg"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="credits">
+            &copy; 2023 deforum
+        </div>
+    </footer>
 </body>
+
 </html>
