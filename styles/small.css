@@ -451,7 +451,7 @@ section {
 /* Info content */
 
 .info header {
-    height: 400px;
+    height: 120px;
     overflow: hidden;
 }
 
@@ -500,7 +500,7 @@ section {
 /* Terms and Privacy Pages */
 
 .terms header {
-    height: 400px;
+    height: 120px;
     overflow: hidden;
 }
 
@@ -523,6 +523,7 @@ section {
 
 #terms p {
     margin-bottom: 30px;
+    margin: 30px;
 }
 
 #terms-header p {

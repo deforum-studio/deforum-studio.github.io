@@ -133,7 +133,7 @@ nav ul li.with-label::after {
 /* --> Terms and Privacy */
 
 .terms header {
-    height: 600px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -280,7 +280,7 @@ nav {
 
 /* --> Info page content */
    .info header, .info #noiseCanvas {
-    height: 600px;
+    height: 160px;
    }
    
 }
@@ -335,7 +335,7 @@ nav {
     padding: 85px;
  }
 
- .info header, .info #noiseCanvas {height: 700px}
+ .info header, .info #noiseCanvas {height: 300px}
 
  /* --> Home page content */
 
