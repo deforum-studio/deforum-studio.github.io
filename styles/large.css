@@ -26,7 +26,7 @@ nav {
     top: 0;
     right: 10px!important;
     left: auto;
-    width: 68%;
+    width: 800px;
     height: auto;
     font-size: 1.2em;
     overflow: visible;
@@ -188,7 +188,7 @@ footer .some-bar {
  }
 
  nav {
-    width: 695px;
+    width: 800px;
  }
 
  #logo {
