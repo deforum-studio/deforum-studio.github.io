@@ -573,6 +573,51 @@ footer .some-bar {
     margin: 50px 0 0 0;
 }
 
+.contributors {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.contributor {
+    position: relative; /* Set relative positioning for absolute positioning of the name within this div */
+    width: 60px; /* Define width to contain the hover effect */
+    height: 60px; /* Define height to contain the hover effect */
+    margin-top: 20px;
+}
+
+.contributor img {
+    display: block;
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.contributor:hover img {
+    border: 3px solid #ffffff; /* Add an outline on hover */
+    cursor: pointer;
+}
+
+.name {
+    display: none; /* Initially hide the name */
+    position: absolute; /* Position absolutely within the relative parent */
+    bottom: -30px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center the name */
+    white-space: nowrap; /* Prevent the name from wrapping */
+    background-color: #000000; /* Optional: background for the name tag */
+    padding: 2px 5px; /* Optional: padding for the name tag */
+    border-radius: 2px; /* Optional: rounded corners for the name tag */
+}
+
+.contributor:hover .name {
+    display: block; /* Show the name on hover */
+}
+
 /* RSPNSV: Old phones */
 @media all and (min-width: 360px) {
    #header-intro h1 {
