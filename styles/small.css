@@ -86,6 +86,10 @@ header {
   left: 30px;
 }
 
+#logo a {
+    text-decoration: none;
+}
+
 /*--> Mobile menu --*/
 /* Menu Icon */
 .menu-icon {
@@ -164,6 +168,14 @@ nav ul {
 	text-align: center;
 }
 
+#menu-toggle:checked ~ nav ul li {
+    margin-top: 30px;
+}
+
+#menu-toggle:checked ~ nav ul {
+    margin-top: 100px;
+}
+
 nav ul li.nav-special {
 	margin-top: 30px;
 }
@@ -232,7 +244,7 @@ nav ul li.nav-special {
 }
 
 .btn-atn2 {
-	padding: 10px 15px;
+	padding: 7px 15px 10px 15px;
     font-size: 1.2em;
 	border: 1px solid rgba(255,255,255,0.8);
 	transition: all 0.3s ease-in;
@@ -244,7 +256,7 @@ nav ul li.nav-special {
 }
 
 .btn-atn2:hover {
-	padding: 10px 20px;
+	padding: 7px 20px 10px 20px;
     border: 1px solid rgba(255,255,255,1);
 }
 
@@ -447,7 +459,7 @@ section {
 /* Info content */
 
 .info header {
-    height: 400px;
+    height: 120px;
     overflow: hidden;
 }
 
@@ -496,7 +508,7 @@ section {
 /* Terms and Privacy Pages */
 
 .terms header {
-    height: 400px;
+    height: 120px;
     overflow: hidden;
 }
 
@@ -519,6 +531,7 @@ section {
 
 #terms p {
     margin-bottom: 30px;
+    margin: 30px;
 }
 
 #terms-header p {
@@ -558,6 +571,51 @@ footer .some-bar {
     font-size: 70%;
     opacity: 0.5;
     margin: 50px 0 0 0;
+}
+
+.contributors {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.contributor {
+    position: relative; /* Set relative positioning for absolute positioning of the name within this div */
+    width: 60px; /* Define width to contain the hover effect */
+    height: 60px; /* Define height to contain the hover effect */
+    margin-top: 6px;
+}
+
+.contributor img {
+    display: block;
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.contributor:hover img {
+    border: 3px solid #ffffff; /* Add an outline on hover */
+    cursor: pointer;
+}
+
+.name {
+    display: none; /* Initially hide the name */
+    position: absolute; /* Position absolutely within the relative parent */
+    bottom: -30px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center the name */
+    white-space: nowrap; /* Prevent the name from wrapping */
+    background-color: #000000; /* Optional: background for the name tag */
+    padding: 2px 5px; /* Optional: padding for the name tag */
+    border-radius: 2px; /* Optional: rounded corners for the name tag */
+}
+
+.contributor:hover .name {
+    display: block; /* Show the name on hover */
 }
 
 /* RSPNSV: Old phones */

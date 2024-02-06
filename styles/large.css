@@ -26,7 +26,7 @@ nav {
     top: 0;
     right: 10px!important;
     left: auto;
-    width: 68%;
+    width: 800px;
     height: auto;
     font-size: 1.2em;
     overflow: visible;
@@ -133,7 +133,7 @@ nav ul li.with-label::after {
 /* --> Terms and Privacy */
 
 .terms header {
-    height: 600px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -188,7 +188,7 @@ footer .some-bar {
  }
 
  nav {
-    width: 695px;
+    width: 800px;
  }
 
  #logo {
@@ -280,7 +280,7 @@ nav {
 
 /* --> Info page content */
    .info header, .info #noiseCanvas {
-    height: 600px;
+    height: 160px;
    }
    
 }
@@ -335,7 +335,7 @@ nav {
     padding: 85px;
  }
 
- .info header, .info #noiseCanvas {height: 700px}
+ .info header, .info #noiseCanvas {height: 300px}
 
  /* --> Home page content */
 
