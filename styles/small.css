@@ -585,7 +585,7 @@ footer .some-bar {
     position: relative; /* Set relative positioning for absolute positioning of the name within this div */
     width: 60px; /* Define width to contain the hover effect */
     height: 60px; /* Define height to contain the hover effect */
-    margin-top: 20px;
+    margin-top: 6px;
 }
 
 .contributor img {
